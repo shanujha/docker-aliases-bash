@@ -70,7 +70,7 @@ alias dcdown-rmi='docker compose down --rmi all'
 # Combined Operations
 alias dcupb='docker compose up --build'
 alias dcupd-build='docker compose up -d --build'
-alias dcrestart='docker compose down && docker compose up -d'
+alias dcrestart='docker compose down; docker compose up -d'
 
 EOF
 
@@ -121,4 +121,3 @@ echo "  dcps   - docker compose ps"
 echo "  ...and many more!"
 echo ""
 echo "Run 'alias | grep dc' to see all Docker Compose aliases."
-echo ""

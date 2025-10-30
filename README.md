@@ -80,7 +80,7 @@ The installer will:
 |-------|---------|-------------|
 | `dcupb` | `docker compose up --build` | Build and start services |
 | `dcupd-build` | `docker compose up -d --build` | Build and start in detached mode |
-| `dcrestart` | `docker compose down && docker compose up -d` | Full restart |
+| `dcrestart` | `docker compose down; docker compose up -d` | Full restart |
 
 ## Usage Examples
 
