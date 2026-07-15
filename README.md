@@ -15,6 +15,33 @@ After installation, restart your terminal or run:
 source ~/.bashrc
 ```
 
+## Install `dps`
+
+Install the `dps` command to get a clean, emoji-powered table view of your Docker containers.
+
+### Example
+
+```text
+🐳 CONTAINER              📦 IMAGE                           🚦 STATUS     🌐 PORTS                     ⏱ UPTIME        📛 ID
+────────────────────────  ─────────────────────────────────  ────────────  ───────────────────────────  ──────────────  ────────────
+postgres                  postgres:17                       🟢 Up         0.0.0.0:5432->5432/tcp      3 days          a91d3c4b8f2a
+plane-api                 makeplane/api:v2.6.4              🟢 Up         8000/tcp                    6 hours         f93ab12d4a67
+redis                     redis:7-alpine                    🟢 Up         6379/tcp                    6 hours         c92ff31e2b45
+nginx                     nginx:latest                      🔴 Exited     80/tcp                      2 days          0ffae13c9d21
+```
+
+### Using `curl`
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/shanujha/docker-aliases-bash/main/install-dps.sh | bash
+```
+
+### Using `wget`
+
+```bash
+wget -qO- https://raw.githubusercontent.com/shanujha/docker-aliases-bash/main/install-dps.sh | bash
+```
+
 ## What It Does
 
 The installer will:
